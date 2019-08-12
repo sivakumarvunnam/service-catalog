@@ -10,7 +10,7 @@
 
 assume-role() {
     set +x
-    ROLE_ARN="${1}"
+    ROLE_ARN=$1
     SESSIONID=$(date +"%s")
 
     RESULT=(`aws sts assume-role --role-arn $ROLE_ARN \
