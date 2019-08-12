@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 platform = $1
 project = $2
 product_name = $3
