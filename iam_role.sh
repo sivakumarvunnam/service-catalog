@@ -1,12 +1,4 @@
-#!/usr/bin/env bash
-
-# assume-role function for use by machine services that don't use MFA to assume role.
-# source this into your bash script and then
-#
-# assume-role(${AWS_ROLE_ARN})
-#
-# The function turns off echoing, so no tokens are exposed.
-# If you wish to hide your Role's ARN, you can set +x before calling the function.
+#!/usr/bin/env bash -e
 
 assume-role() {
     set +x
